@@ -35,7 +35,7 @@ with col2:
         elif not text_input and image_file is None:
             st.warning("Please provide either chat text or an image to start computation.")
         else:
-            with St.spinner("Simulating Cloud Calculations..."):
+            with st.spinner("Simulating Cloud Calculations..."):
                 try:
                     client = genai.Client(api_key=api_key.strip())
                     prompt = """
